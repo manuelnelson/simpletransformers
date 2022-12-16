@@ -5,7 +5,7 @@ import pandas as pd
 import wandb
 from sklearn.metrics import accuracy_score
 
-from simpletransformers.classification import ClassificationArgs, ClassificationModel
+from macsimpletransformers.classification import ClassificationArgs, ClassificationModel
 from utils import load_rte_data_file
 
 logging.basicConfig(level=logging.INFO)

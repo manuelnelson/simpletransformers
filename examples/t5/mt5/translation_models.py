@@ -1,6 +1,6 @@
 import logging
 
-from simpletransformers.seq2seq import Seq2SeqModel, Seq2SeqArgs
+from macsimpletransformers.seq2seq import Seq2SeqModel, Seq2SeqArgs
 
 
 logging.basicConfig(level=logging.INFO)

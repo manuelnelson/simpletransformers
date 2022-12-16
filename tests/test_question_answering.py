@@ -4,7 +4,7 @@ import os
 
 import pytest
 
-from simpletransformers.question_answering import QuestionAnsweringModel
+from macsimpletransformers.question_answering import QuestionAnsweringModel
 
 
 @pytest.mark.parametrize(

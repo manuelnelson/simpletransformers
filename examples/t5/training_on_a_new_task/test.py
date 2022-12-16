@@ -2,7 +2,7 @@ from pprint import pprint
 
 import pandas as pd
 
-from simpletransformers.t5 import T5Model
+from macsimpletransformers.t5 import T5Model
 
 model_args = {
     "reprocess_input_data": True,

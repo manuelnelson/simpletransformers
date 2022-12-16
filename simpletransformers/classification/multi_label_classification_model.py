@@ -44,11 +44,11 @@ from transformers import (
     XLNetTokenizer,
 )
 
-from simpletransformers.classification import ClassificationModel
-from simpletransformers.config.global_args import global_args
-from simpletransformers.config.model_args import MultiLabelClassificationArgs
-from simpletransformers.config.utils import sweep_config_to_sweep_values
-from simpletransformers.custom_models.models import (
+from macsimpletransformers.classification import ClassificationModel
+from macsimpletransformers.config.global_args import global_args
+from macsimpletransformers.config.model_args import MultiLabelClassificationArgs
+from macsimpletransformers.config.utils import sweep_config_to_sweep_values
+from macsimpletransformers.custom_models.models import (
     AlbertForMultiLabelSequenceClassification,
     BertForMultiLabelSequenceClassification,
     BertweetForMultiLabelSequenceClassification,

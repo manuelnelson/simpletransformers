@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import pytest
 
-from simpletransformers.seq2seq import Seq2SeqArgs, Seq2SeqModel
+from macsimpletransformers.seq2seq import Seq2SeqArgs, Seq2SeqModel
 
 
 @pytest.mark.parametrize(

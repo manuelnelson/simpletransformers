@@ -105,11 +105,11 @@ from transformers.data.datasets.language_modeling import (
     TextDataset,
 )
 
-from simpletransformers.config.global_args import global_args
-from simpletransformers.config.model_args import LanguageModelingArgs
-from simpletransformers.config.utils import sweep_config_to_sweep_values
-from simpletransformers.custom_models.models import ElectraForLanguageModelingModel
-from simpletransformers.language_modeling.language_modeling_utils import (
+from macsimpletransformers.config.global_args import global_args
+from macsimpletransformers.config.model_args import LanguageModelingArgs
+from macsimpletransformers.config.utils import sweep_config_to_sweep_values
+from macsimpletransformers.custom_models.models import ElectraForLanguageModelingModel
+from macsimpletransformers.language_modeling.language_modeling_utils import (
     SimpleDataset,
     load_hf_dataset,
     mask_tokens,
@@ -761,7 +761,7 @@ class LanguageModelingModel:
             wandb.init(
                 project=args.wandb_project, config={**asdict(args)}, **args.wandb_kwargs
             )
-            wandb.run._label(repo="simpletransformers")
+            wandb.run._label(repo="macsimpletransformers")
             wandb.watch(self.model)
             self.wandb_run_id = wandb.run.id
 

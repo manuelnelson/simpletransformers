@@ -1,3 +1,3 @@
-from simpletransformers.classification.classification_model import ClassificationModel
+from macsimpletransformers.classification.classification_model import ClassificationModel
 
 TransformerModel = ClassificationModel

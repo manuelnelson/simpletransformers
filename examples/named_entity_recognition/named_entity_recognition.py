@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 from scipy.special import softmax
-from simpletransformers.config.model_args import NERArgs
+from macsimpletransformers.config.model_args import NERArgs
 
-from simpletransformers.ner import NERModel
+from macsimpletransformers.ner import NERModel
 
 # Creating train_df  and eval_df for demonstration
 train_data = [

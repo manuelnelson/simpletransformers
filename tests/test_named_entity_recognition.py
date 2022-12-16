@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from simpletransformers.ner import NERModel
+from macsimpletransformers.ner import NERModel
 
 
 @pytest.mark.parametrize(

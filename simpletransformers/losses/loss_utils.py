@@ -1,7 +1,7 @@
 import torch
 import warnings
 from torch.nn import CrossEntropyLoss
-from simpletransformers.losses import FocalLoss, DiceLoss, TverskyLoss
+from macsimpletransformers.losses import FocalLoss, DiceLoss, TverskyLoss
 
 
 def init_loss(weight, device, args):

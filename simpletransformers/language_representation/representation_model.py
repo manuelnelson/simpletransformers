@@ -21,12 +21,12 @@ from transformers import (
     RobertaTokenizer,
 )
 
-from simpletransformers.config.model_args import ModelArgs
-from simpletransformers.config.utils import sweep_config_to_sweep_values
-from simpletransformers.language_representation.transformer_models.bert_model import (
+from macsimpletransformers.config.model_args import ModelArgs
+from macsimpletransformers.config.utils import sweep_config_to_sweep_values
+from macsimpletransformers.language_representation.transformer_models.bert_model import (
     BertForTextRepresentation,
 )
-from simpletransformers.language_representation.transformer_models.gpt2_model import (
+from macsimpletransformers.language_representation.transformer_models.gpt2_model import (
     GPT2ForTextRepresentation,
 )
 

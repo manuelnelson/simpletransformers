@@ -3,11 +3,11 @@ import pandas as pd
 import numpy as np
 from scipy.special import softmax
 
-from simpletransformers.classification import (
+from macsimpletransformers.classification import (
     ClassificationModel,
     MultiLabelClassificationModel,
 )
-from simpletransformers.streamlit.streamlit_utils import get, simple_transformers_model
+from macsimpletransformers.streamlit.streamlit_utils import get, simple_transformers_model
 
 
 def get_states(model, session_state=None):

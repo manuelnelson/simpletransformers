@@ -46,7 +46,7 @@ from transformers import (
 )
 from transformers.models.mmbt.configuration_mmbt import MMBTConfig
 
-from simpletransformers.classification.classification_utils import (
+from macsimpletransformers.classification.classification_utils import (
     ImageEncoder,
     InputExample,
     JsonlDataset,
@@ -54,12 +54,12 @@ from simpletransformers.classification.classification_utils import (
     convert_examples_to_features,
     get_image_transforms,
 )
-from simpletransformers.classification.transformer_models.mmbt_model import (
+from macsimpletransformers.classification.transformer_models.mmbt_model import (
     MMBTForClassification,
 )
-from simpletransformers.config.global_args import global_args
-from simpletransformers.config.model_args import MultiModalClassificationArgs
-from simpletransformers.config.utils import sweep_config_to_sweep_values
+from macsimpletransformers.config.global_args import global_args
+from macsimpletransformers.config.model_args import MultiModalClassificationArgs
+from macsimpletransformers.config.utils import sweep_config_to_sweep_values
 
 try:
     import wandb
@@ -577,7 +577,7 @@ class MultiModalClassificationModel:
                 config={**asdict(args)},
                 **args.wandb_kwargs,
             )
-            wandb.run._label(repo="simpletransformers")
+            wandb.run._label(repo="macsimpletransformers")
             wandb.watch(self.model)
             self.wandb_run_id = wandb.run.id
 

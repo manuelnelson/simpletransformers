@@ -1,6 +1,6 @@
 import pandas as pd
 
-from simpletransformers.classification import MultiLabelClassificationModel
+from macsimpletransformers.classification import MultiLabelClassificationModel
 
 # Train and Evaluation data needs to be in a Pandas Dataframe containing at least two columns, a 'text' and a 'labels' column. The `labels` column should contain multi-hot encoded lists.
 train_data = [

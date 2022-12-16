@@ -118,7 +118,7 @@ from transformers import (
 )
 from transformers.convert_graph_to_onnx import convert, quantize
 
-from simpletransformers.classification.classification_utils import (
+from macsimpletransformers.classification.classification_utils import (
     InputExample,
     LazyClassificationDataset,
     ClassificationDataset,
@@ -126,12 +126,12 @@ from simpletransformers.classification.classification_utils import (
     load_hf_dataset,
     flatten_results,
 )
-from simpletransformers.config.global_args import global_args
-from simpletransformers.config.model_args import ClassificationArgs
-from simpletransformers.config.utils import sweep_config_to_sweep_values
-from simpletransformers.losses.loss_utils import init_loss
+from macsimpletransformers.config.global_args import global_args
+from macsimpletransformers.config.model_args import ClassificationArgs
+from macsimpletransformers.config.utils import sweep_config_to_sweep_values
+from macsimpletransformers.losses.loss_utils import init_loss
 
-# from simpletransformers.custom_models.models import ElectraForSequenceClassification
+# from macsimpletransformers.custom_models.models import ElectraForSequenceClassification
 
 
 try:
@@ -878,7 +878,7 @@ class ClassificationModel:
                     config={**asdict(args)},
                     **args.wandb_kwargs,
                 )
-                wandb.run._label(repo="simpletransformers")
+                wandb.run._label(repo="macsimpletransformers")
                 self.wandb_run_id = wandb.run.id
             wandb.watch(self.model)
 
@@ -1625,7 +1625,7 @@ class ClassificationModel:
                     config={**asdict(args)},
                     **args.wandb_kwargs,
                 )
-                wandb.run._label(repo="simpletransformers")
+                wandb.run._label(repo="macsimpletransformers")
             if not args.labels_map:
                 self.args.labels_map = {i: i for i in range(self.num_labels)}
 

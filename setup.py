@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="simpletransformers",
+    name="macsimpletransformers",
     version="0.63.9",
     author="Thilina Rajapakse",
     author_email="chaturangarajapakshe@gmail.com",
     description="An easy-to-use wrapper library for the Transformers library.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ThilinaRajapakse/simpletransformers/",
+    url="https://github.com/manuelnelson/simpletransformers/",
     packages=find_packages(),
     scripts=["bin/simple-viewer"],
     classifiers=[

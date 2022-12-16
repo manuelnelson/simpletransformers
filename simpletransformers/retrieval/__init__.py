@@ -1,2 +1,2 @@
-from simpletransformers.config.model_args import RetrievalArgs
-from simpletransformers.retrieval.retrieval_model import RetrievalModel
+from macsimpletransformers.config.model_args import RetrievalArgs
+from macsimpletransformers.retrieval.retrieval_model import RetrievalModel

@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from simpletransformers.classification import (
+from macsimpletransformers.classification import (
     ClassificationModel,
     MultiLabelClassificationModel,
 )

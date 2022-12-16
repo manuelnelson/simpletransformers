@@ -44,10 +44,10 @@ from transformers.models.auto import (
 import datasets
 from datasets import load_from_disk
 
-from simpletransformers.config.global_args import global_args
-from simpletransformers.config.model_args import RetrievalArgs
-from simpletransformers.config.utils import sweep_config_to_sweep_values
-from simpletransformers.retrieval.retrieval_utils import (
+from macsimpletransformers.config.global_args import global_args
+from macsimpletransformers.config.model_args import RetrievalArgs
+from macsimpletransformers.config.utils import sweep_config_to_sweep_values
+from macsimpletransformers.retrieval.retrieval_utils import (
     get_prediction_passage_dataset,
     load_hf_dataset,
     get_evaluation_passage_dataset,
@@ -497,7 +497,7 @@ class RetrievalModel:
                 config={**asdict(args)},
                 **args.wandb_kwargs,
             )
-            wandb.run._label(repo="simpletransformers")
+            wandb.run._label(repo="macsimpletransformers")
             wandb.watch(context_model)
             wandb.watch(query_model)
 
@@ -1171,7 +1171,7 @@ class RetrievalModel:
                     config={**asdict(args)},
                     **args.wandb_kwargs,
                 )
-                wandb.run._label(repo="simpletransformers")
+                wandb.run._label(repo="macsimpletransformers")
                 self.wandb_run_id = wandb.run.id
             wandb.log(results)
 

@@ -45,29 +45,29 @@ from transformers import (
     get_linear_schedule_with_warmup,
 )
 
-from simpletransformers.experimental.classification.classification_utils import (
+from macsimpletransformers.experimental.classification.classification_utils import (
     InputExample,
     convert_examples_to_features,
 )
-from simpletransformers.experimental.classification.transformer_models.albert_model import (
+from macsimpletransformers.experimental.classification.transformer_models.albert_model import (
     AlbertForSequenceClassification,
 )
-from simpletransformers.experimental.classification.transformer_models.bert_model import (
+from macsimpletransformers.experimental.classification.transformer_models.bert_model import (
     BertForSequenceClassification,
 )
-from simpletransformers.experimental.classification.transformer_models.camembert_model import (
+from macsimpletransformers.experimental.classification.transformer_models.camembert_model import (
     CamembertForSequenceClassification,
 )
-from simpletransformers.experimental.classification.transformer_models.distilbert_model import (
+from macsimpletransformers.experimental.classification.transformer_models.distilbert_model import (
     DistilBertForSequenceClassification,
 )
-from simpletransformers.experimental.classification.transformer_models.roberta_model import (
+from macsimpletransformers.experimental.classification.transformer_models.roberta_model import (
     RobertaForSequenceClassification,
 )
-from simpletransformers.experimental.classification.transformer_models.xlm_model import (
+from macsimpletransformers.experimental.classification.transformer_models.xlm_model import (
     XLMForSequenceClassification,
 )
-from simpletransformers.experimental.classification.transformer_models.xlnet_model import (
+from macsimpletransformers.experimental.classification.transformer_models.xlnet_model import (
     XLNetForSequenceClassification,
 )
 

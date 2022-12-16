@@ -56,14 +56,14 @@ from transformers import (
     BlenderbotConfig,
 )
 
-from simpletransformers.classification.classification_utils import (
+from macsimpletransformers.classification.classification_utils import (
     InputExample,
     convert_examples_to_features,
 )
-from simpletransformers.config.global_args import global_args
-from simpletransformers.config.model_args import ConvAIArgs
-from simpletransformers.config.utils import sweep_config_to_sweep_values
-from simpletransformers.conv_ai.conv_ai_utils import get_dataset
+from macsimpletransformers.config.global_args import global_args
+from macsimpletransformers.config.model_args import ConvAIArgs
+from macsimpletransformers.config.utils import sweep_config_to_sweep_values
+from macsimpletransformers.conv_ai.conv_ai_utils import get_dataset
 
 try:
     import wandb
@@ -482,7 +482,7 @@ class ConvAIModel:
                 config={**asdict(args)},
                 **args.wandb_kwargs,
             )
-            wandb.run._label(repo="simpletransformers")
+            wandb.run._label(repo="macsimpletransformers")
             wandb.watch(self.model)
             self.wandb_run_id = wandb.run.id
 

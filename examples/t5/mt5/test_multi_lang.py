@@ -3,7 +3,7 @@ from datetime import datetime
 from statistics import mean
 
 import pandas as pd
-from simpletransformers.t5 import T5Model
+from macsimpletransformers.t5 import T5Model
 from sklearn.metrics import accuracy_score, f1_score
 from transformers.data.metrics.squad_metrics import compute_exact, compute_f1
 

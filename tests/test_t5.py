@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from simpletransformers.t5 import T5Model
+from macsimpletransformers.t5 import T5Model
 
 
 def test_t5():

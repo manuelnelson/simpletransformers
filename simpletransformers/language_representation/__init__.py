@@ -1,3 +1,3 @@
-from simpletransformers.language_representation.representation_model import (
+from macsimpletransformers.language_representation.representation_model import (
     RepresentationModel,
 )

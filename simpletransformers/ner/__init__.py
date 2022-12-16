@@ -1,2 +1,2 @@
-from simpletransformers.config.model_args import NERArgs
-from simpletransformers.ner.ner_model import NERModel
+from macsimpletransformers.config.model_args import NERArgs
+from macsimpletransformers.ner.ner_model import NERModel

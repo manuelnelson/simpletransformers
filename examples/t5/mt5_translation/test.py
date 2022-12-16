@@ -1,7 +1,7 @@
 import logging
 import sacrebleu
 import pandas as pd
-from simpletransformers.t5 import T5Model, T5Args
+from macsimpletransformers.t5 import T5Model, T5Args
 
 
 logging.basicConfig(level=logging.INFO)

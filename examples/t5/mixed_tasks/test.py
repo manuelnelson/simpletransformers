@@ -9,7 +9,7 @@ from scipy.stats import pearsonr, spearmanr
 from sklearn.metrics import accuracy_score, f1_score
 from transformers.data.metrics.squad_metrics import compute_exact, compute_f1
 
-from simpletransformers.t5 import T5Model
+from macsimpletransformers.t5 import T5Model
 
 
 def f1(truths, preds):

@@ -18,10 +18,10 @@ from seqeval.metrics import (
     precision_score,
     recall_score,
 )
-from simpletransformers.config.model_args import NERArgs
-from simpletransformers.config.utils import sweep_config_to_sweep_values
-from simpletransformers.losses.loss_utils import init_loss
-from simpletransformers.ner.ner_utils import (
+from macsimpletransformers.config.model_args import NERArgs
+from macsimpletransformers.config.utils import sweep_config_to_sweep_values
+from macsimpletransformers.losses.loss_utils import init_loss
+from macsimpletransformers.ner.ner_utils import (
     InputExample,
     LazyNERDataset,
     convert_examples_to_features,
@@ -756,7 +756,7 @@ class NERModel:
                 config={**asdict(args)},
                 **args.wandb_kwargs,
             )
-            wandb.run._label(repo="simpletransformers")
+            wandb.run._label(repo="macsimpletransformers")
             wandb.watch(self.model)
             self.wandb_run_id = wandb.run.id
 
@@ -1414,7 +1414,7 @@ class NERModel:
                 config={**asdict(args)},
                 **args.wandb_kwargs,
             )
-            wandb.run._label(repo="simpletransformers")
+            wandb.run._label(repo="macsimpletransformers")
 
             labels_list = sorted(self.args.labels_list)
 

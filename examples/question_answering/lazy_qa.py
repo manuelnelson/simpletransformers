@@ -4,7 +4,7 @@ import os
 
 from tqdm.auto import tqdm
 
-from simpletransformers.question_answering import QuestionAnsweringModel
+from macsimpletransformers.question_answering import QuestionAnsweringModel
 
 logging.basicConfig(level=logging.INFO)
 transformers_logger = logging.getLogger("transformers")

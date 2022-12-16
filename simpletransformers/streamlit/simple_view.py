@@ -5,19 +5,19 @@ import logging
 import streamlit as st
 from torch.cuda import is_available
 
-from simpletransformers.classification import (
+from macsimpletransformers.classification import (
     ClassificationModel,
     MultiLabelClassificationModel,
 )
-from simpletransformers.ner import NERModel
-from simpletransformers.question_answering import QuestionAnsweringModel
-from simpletransformers.t5 import T5Model, T5Args
-from simpletransformers.seq2seq import Seq2SeqModel
-from simpletransformers.streamlit.streamlit_utils import cache_on_button_press
-from simpletransformers.streamlit.qa_view import qa_viewer
-from simpletransformers.streamlit.classification_view import classification_viewer
-from simpletransformers.streamlit.ner_view import ner_viewer
-from simpletransformers.streamlit.t5_view import t5_viewer
+from macsimpletransformers.ner import NERModel
+from macsimpletransformers.question_answering import QuestionAnsweringModel
+from macsimpletransformers.t5 import T5Model, T5Args
+from macsimpletransformers.seq2seq import Seq2SeqModel
+from macsimpletransformers.streamlit.streamlit_utils import cache_on_button_press
+from macsimpletransformers.streamlit.qa_view import qa_viewer
+from macsimpletransformers.streamlit.classification_view import classification_viewer
+from macsimpletransformers.streamlit.ner_view import ner_viewer
+from macsimpletransformers.streamlit.t5_view import t5_viewer
 
 
 logging.basicConfig(level=logging.WARNING)

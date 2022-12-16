@@ -74,10 +74,10 @@ from transformers import (
 import datasets
 from datasets import load_from_disk
 
-from simpletransformers.config.global_args import global_args
-from simpletransformers.config.model_args import Seq2SeqArgs
-from simpletransformers.config.utils import sweep_config_to_sweep_values
-from simpletransformers.seq2seq.seq2seq_utils import (
+from macsimpletransformers.config.global_args import global_args
+from macsimpletransformers.config.model_args import Seq2SeqArgs
+from macsimpletransformers.config.utils import sweep_config_to_sweep_values
+from macsimpletransformers.seq2seq.seq2seq_utils import (
     Seq2SeqDataset,
     SimpleSummarizationDataset,
     add_faiss_index_to_dataset,
@@ -718,7 +718,7 @@ class Seq2SeqModel:
                 config={**asdict(args)},
                 **args.wandb_kwargs,
             )
-            wandb.run._label(repo="simpletransformers")
+            wandb.run._label(repo="macsimpletransformers")
             wandb.watch(self.model)
             self.wandb_run_id = wandb.run.id
 

@@ -1,2 +1,2 @@
-from simpletransformers.config.model_args import ConvAIArgs
-from simpletransformers.conv_ai.conv_ai_model import ConvAIModel
+from macsimpletransformers.config.model_args import ConvAIArgs
+from macsimpletransformers.conv_ai.conv_ai_model import ConvAIModel

@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-from simpletransformers.question_answering import QuestionAnsweringModel
-from simpletransformers.streamlit.streamlit_utils import get, simple_transformers_model
+from macsimpletransformers.question_answering import QuestionAnsweringModel
+from macsimpletransformers.streamlit.streamlit_utils import get, simple_transformers_model
 
 
 QA_ANSWER_WRAPPER = """{} <span style="overflow-x: auto; border: 1px solid #e6e9ef; border-radius: 0.25rem; padding: 0.25rem; background: #a6e22d">{}</span> {}"""  # noqa

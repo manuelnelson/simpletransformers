@@ -2,7 +2,7 @@ import sys
 
 import pandas as pd
 
-from simpletransformers.classification import ClassificationModel
+from macsimpletransformers.classification import ClassificationModel
 
 prefix = "data/"
 

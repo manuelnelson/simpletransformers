@@ -1,6 +1,6 @@
 import pytest
 
-from simpletransformers.language_representation import RepresentationModel
+from macsimpletransformers.language_representation import RepresentationModel
 
 
 @pytest.mark.parametrize(

@@ -1,7 +1,7 @@
 import json
 import os
 
-from simpletransformers.question_answering import QuestionAnsweringModel
+from macsimpletransformers.question_answering import QuestionAnsweringModel
 
 # Create dummy data to use for training.
 train_data = [

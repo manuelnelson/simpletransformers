@@ -7,7 +7,7 @@ import wandb
 from prettyprinter import pprint
 from sklearn.metrics import accuracy_score, f1_score
 
-from simpletransformers.classification import ClassificationArgs, ClassificationModel
+from macsimpletransformers.classification import ClassificationArgs, ClassificationModel
 from utils import load_rte_data_file
 
 prettyprinter.install_extras(

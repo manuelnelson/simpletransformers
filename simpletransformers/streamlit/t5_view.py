@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-from simpletransformers.t5 import T5Model
-from simpletransformers.streamlit.streamlit_utils import get, simple_transformers_model
+from macsimpletransformers.t5 import T5Model
+from macsimpletransformers.streamlit.streamlit_utils import get, simple_transformers_model
 
 
 def get_states(model, session_state=None):

@@ -3,7 +3,7 @@ import os
 import pickle
 from multiprocessing import Pool
 from functools import partial
-from simpletransformers.seq2seq.seq2seq_utils import add_faiss_index_to_dataset
+from macsimpletransformers.seq2seq.seq2seq_utils import add_faiss_index_to_dataset
 from datasets.load import load_from_disk
 
 import torch

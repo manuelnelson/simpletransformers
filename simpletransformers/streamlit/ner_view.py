@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-from simpletransformers.ner import NERModel
-from simpletransformers.streamlit.streamlit_utils import (
+from macsimpletransformers.ner import NERModel
+from macsimpletransformers.streamlit.streamlit_utils import (
     get,
     simple_transformers_model,
     get_color,

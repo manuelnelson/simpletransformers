@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import pytest
 
-from simpletransformers.language_modeling import LanguageModelingModel
+from macsimpletransformers.language_modeling import LanguageModelingModel
 
 
 @pytest.mark.parametrize(

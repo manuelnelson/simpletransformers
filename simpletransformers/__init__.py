@@ -1,1 +1,1 @@
-name = "simpletransformers"
+name = "macsimpletransformers"

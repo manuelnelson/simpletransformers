@@ -17,8 +17,8 @@ from transformers import (
     XLNetTokenizer,
 )
 
-from simpletransformers.classification import ClassificationModel
-from simpletransformers.custom_models.models import (
+from macsimpletransformers.classification import ClassificationModel
+from macsimpletransformers.custom_models.models import (
     AlbertForMultiLabelSequenceClassification,
     BertForMultiLabelSequenceClassification,
     DistilBertForMultiLabelSequenceClassification,
